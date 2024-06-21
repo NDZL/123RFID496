@@ -8,8 +8,11 @@ public class Sgtin96 {
     public static final Integer BIN = 2;
     public static final Integer HEX = 16;
     public static final String HEADER = "00110000";
-    public static final Integer Sgtin96LengthBits = 96;
-    public static final Integer Sgtin96LengthHex = 24;
+    //public static final Integer Sgtin96LengthBits = 96;//original
+    public static final Integer Sgtin96LengthBits = 496;
+    //public static final Integer Sgtin96LengthHex = 24;
+    public static final Integer Sgtin96LengthHex = 124;
+
     public enum Partition {
         SIX(20, 24), SEVEN(24, 20), EIGHT(27, 17), NINE(30, 14),
         TEN(34, 10), ELEVEN(37, 7), TWELVE(40, 4);
