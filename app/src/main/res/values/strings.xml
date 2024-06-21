@@ -1,0 +1,1187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">123RFID Mobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">RFID Settings</string>
+    <string name="rapid_read">Rapid Read</string>
+    <string name="title_activity_inventory">InventoryActivity</string>
+
+    <!-- Options available in the Navigation Drawer of the application -->
+    <string-array name="options_array">
+        <item>Home</item>
+        <item>Rapid Read</item>
+        <item>Inventory</item>
+        <item>Locate Tag</item>
+        <item>Settings</item>
+        <item>Tag Write</item>
+        <item>Pre Filters</item>
+        <item>Readers List</item>
+        <item>About</item>
+        <item>Profiles</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">INSTANT VISIBLITY INTO YOUR OPERATIONS</string>
+    <string name="nav_header_desc">123RFID Mobile</string>
+
+
+    <!-- Strings for the navigation drawer -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings for actions in Inventory Fragment -->
+    <string name="action_none">None</string>
+    <string name="action_user">User</string>
+    <string name="action_reserved">Reserved</string>
+    <string name="action_tid">TID</string>
+    <string name="action_epic">EPC</string>
+    <string name="title_activity_antenna_settings">Antenna</string>
+    <string name="title_activity_readers_list">Readers List</string>
+    <string name="title_activity_application_settings">Application</string>
+    <string name="title_activity_singulation_control">Singulation Control</string>
+    <string name="unique_tag_settings">Unique Tag Settings</string>
+    <string name="unique_tag_reads">Report Unique tags</string>
+    <string name="report_unique_tags">Report Unique tags</string>
+
+    <!-- Items for link profile -->
+    <string-array name="link_profile_array">
+        <item>RF Mode 1</item>
+        <item>RF Mode 2</item>
+        <item>RR Mode 1</item>
+        <item>RR Mode 2</item>
+        <item>RS Mode 1</item>
+        <item>RS Mode 2</item>
+    </string-array>
+
+    <!-- Strings for Singulation Control Fragment -->
+    <!-- Items for sessions -->
+    <string-array name="session_array">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+
+    <!-- Items for populating tags -->
+    <string-array name="tag_population_array">
+        <item>30</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+    </string-array>
+
+    <!-- Items for inventory state -->
+    <string-array name="inventory_state_array">
+        <item>STATE A</item>
+        <item>STATE B</item>
+        <item>AB FLIP</item>
+    </string-array>
+
+    <!-- Items for sl flag -->
+    <string-array name="sl_flags_array">
+        <item>ALL</item>
+        <item>DEASSERTED</item>
+        <item>ASSERTED</item>
+    </string-array>
+
+    <string-array name="inv_menu_items">
+        <item>None</item>
+        <item>User</item>
+        <item>Reserved</item>
+        <item>TID</item>
+        <item>EPC</item>
+        <item>TAMPER</item>
+    </string-array>
+
+    <!-- Strings for Access Operations Read Write Fragment -->
+
+    <!-- Items for memory bank state -->
+    <string-array name="acess_read_write_memory_bank_array">
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+        <item>ACCESS PASSWORD</item>
+        <item>KILL PASSWORD</item>
+    </string-array>
+
+    <!-- Strings for Access Operations Lock Fragment -->
+    <!-- Items for memory bank state -->
+    <string-array name="acess_lock_memory_bank_array">
+        <item>EPC</item>
+        <item>ACCESS PWD</item>
+        <item>KILL PWD</item>
+        <item>TID</item>
+        <item>USER</item>
+        <item>ALL</item>
+    </string-array>
+
+    <!-- Items for lock privilege state -->
+    <string-array name="acess_lock_privilege_array">
+        <!--<item>None</item>-->
+        <item>Read and Write</item>
+        <item>Permanent Lock</item>
+        <item>Permanent Unlock</item>
+        <item>Unlock</item>
+    </string-array>
+
+    <!-- Strings for Access Operations Kill Fragment -->
+
+    <!-- Strings for Access Operations Kill Fragment -->
+    <!-- Items for tagID -->
+    <string-array name="pre_filter_memory_bank_array">
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+
+    <string-array name="pre_filter_action_array">
+        <item>INV A NOT INV B OR ASRT SL NOT DSRT SL</item>
+        <item>INV A OR ASRT SL</item>
+        <item>NOT INV B OR NOT DSRT SL</item>
+        <item>INV A2BB2A NOT INV A OR NEG SL NOT ASRT SL</item>
+        <item>INV B NOT INV A OR DSRT SL NOT ASRT SL</item>
+        <item>INV B OR DSRT SL</item>
+        <item>NOT INV A OR NOT ASRT SL</item>
+        <item>NOT INV A2BB2A OR NOT NEG SL</item>
+    </string-array>
+
+    <string-array name="pre_filter_target_options">
+        <item>SESSION S0</item>
+        <item>SESSION S1</item>
+        <item>SESSION S2</item>
+        <item>SESSION S3</item>
+        <item>SL FLAG</item>
+    </string-array>
+
+    <string-array name="pre_filter_tag_id_array">
+        <item>AD9915404190725965400412</item>
+        <item>AD9915404190725965400413</item>
+        <item>AD9915404190725965400414</item>
+        <item>AD9915404190725965400415</item>
+        <item>AD9915404190725965400416</item>
+    </string-array>
+
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="title_activity_access_operations">TagWriteActivity</string>
+
+    <!-- Strings for StartStopTrigger Fragment -->
+    <!-- Strings for start trigger Selection -->
+    <string-array name="start_trigger_array">
+        <item>Immediate</item>
+        <item>Handheld</item>
+        <item>Periodic</item>
+    </string-array>
+    <!-- Strings for stop trigger Selection -->
+    <string-array name="stop_trigger_array">
+        <item>Immediate</item>
+        <item>Handheld</item>
+        <item>Duration</item>
+        <item>Tag Observation</item>
+        <item>N attempts</item>
+    </string-array>
+
+    <!-- beeper volume -->
+    <string-array name="beeper_volume_array">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <!-- Strings for PIE Antenna Control Fragment -->
+    <!-- Items for PIE -->
+    <string-array name="pie_array">
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="pie0_array">
+        <item>0</item>
+    </string-array>
+
+    <string-array name="pie_array_668">
+        <item>668</item>
+    </string-array>
+
+    <string-array name="pie_array_2000">
+        <item>2000</item>
+    </string-array>
+
+    <!-- Strings for PIE Antenna Control Fragment -->
+    <!-- Items for TARI -->
+    <string-array name="tari_array">
+        <item>6250</item>
+        <item>12500</item>
+        <item>14600</item>
+        <item>16700</item>
+        <item>18800</item>
+        <item>20900</item>
+        <item>23000</item>
+        <item>25000</item>
+    </string-array>
+    <string-array name="tari_array_625">
+        <item>6250</item>
+    </string-array>
+    <string-array name="tari_array_668">
+        <item>668</item>
+    </string-array>
+    <string-array name="tari0_array">
+        <item>0</item>
+    </string-array>
+    <string-array name="tari_array_12_25">
+        <item>12500</item>
+        <item>14600</item>
+        <item>16700</item>
+        <item>18800</item>
+        <item>20900</item>
+        <item>23000</item>
+        <item>25000</item>
+    </string-array>
+    <string-array name="tari_array_18_25">
+        <item>18800</item>
+        <item>20900</item>
+        <item>23000</item>
+        <item>25000</item>
+    </string-array>
+    <string-array name="tari_array_18">
+        <item>12500</item>
+        <item>14600</item>
+        <item>16700</item>
+        <item>18800</item>
+    </string-array>
+    <string-array name="tari_array_18_only">
+        <item>18800</item>
+    </string-array>
+    <string-array name="tari_array_25_only">
+        <item>25000</item>
+    </string-array>
+    <string-array name="tari_array_25_6300">
+        <item>12500</item>
+        <item>18800</item>
+        <item>25000</item>
+    </string-array>
+    <string-array name="tari_array_18_6300">
+        <item>12500</item>
+        <item>18800</item>
+    </string-array>
+
+    <!-- Error Indicators -->
+    <string name="none_paired">No Devices Found</string>
+    <string name="select_device">Select A Device</string>
+    <string name="none_found">No Devices Found</string>
+    <string name="error_security">Security Error in SerialPortActivity</string>
+    <string name="error_unknown">Unknown Error in Serial Port Activity</string>
+    <string name="error_configuration">Configuration Error in SerialPortActivity</string>
+    <string name="title_activity_base_receiver">BaseReceiverActivity</string>
+    <string name="error_unsatisfied_link">UnsatisfiedLinkError in SerialPortActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_regulatory_settings">Regulatory</string>
+    <string name="title_activity_start_stop_trigger">Start\\Stop Triggers</string>
+    <string name="title_activity_save_configuration">Save Configuration</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_beeper">Beeper</string>
+    <string name="led_settings_title">LED Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_settings_detail">Setting Details</string>
+    <string name="action_search">Search</string>
+    <string name="action_rr">Rapid Read</string>
+    <string name="search_hint">Enter Tag ID</string>
+
+    <!-- Titles in ReadersList -->
+    <string name="active_reader_title">Active Reader</string>
+    <string name="available_readers_title">Available Readers</string>
+    <string name="pair_new_reader">Pair New</string>
+    <!-- Titles in regulatory settings -->
+    <string name="channel_selection">Channel Selection</string>
+
+    <!-- Titles in connection settings -->
+    <string name="reader_conn_sett">Reader Connection Settings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="tag_reporting">Tag Reporting</string>
+    <string name="battery">Battery</string>
+    <string name="rr_unique_tags_title">UNIQUE TAGS</string>
+    <string name="rr_total_tag_title">TOTAL READS</string>
+    <string name="rr_unique_tags_title_MM">MISSING TAGS</string>
+    <string name="rr_total_tag_title_MM">MATCHING TAGS</string>
+    <string name="rr_read_time_title">READ TIME</string>
+    <string name="rr_read_rate_title">READ RATE</string>
+    <string name="start_title">START</string>
+    <string name="tag_id">Tag ID</string>
+    <string name="locationing_distance_title">Relative Distance</string>
+    <string name="stop_title">STOP</string>
+    <string name="tag_pattern_title">Tag Pattern</string>
+    <string name="password_title">Password</string>
+    <string name="memory_bank_title">Memory Bank</string>
+    <string name="offset_title">Offset (words)</string>
+    <string name="length_title">Length (words)</string>
+    <string name="data_title">Data</string>
+    <string name="operation_success">Operation Completed Successfully</string>
+    <string name="read_title">READ</string>
+    <string name="write_title">WRITE</string>
+    <string name="lock_privilege_title">Lock Privilege</string>
+    <string name="lock_title">LOCK</string>
+    <string name="kill_pass_title">Kill Password</string>
+    <string name="kill_title">KILL</string>
+    <string name="offset_bits_title">Offset (words)</string>
+    <string name="target_title">Target</string>
+    <string name="action_title">Action</string>
+    <string name="length_bits_title">Length (bits)</string>
+    <string name="enable_filter_1">Enable Filter 1</string>
+    <string name="enable_filter_2">Enable Filter 2</string>
+    <string name="power_level_title">Power Level \n(tens of dbm)</string>
+    <string name="link_profile_title">Link Profile</string>
+    <string name="status_success_message">Settings Applied Successfully</string>
+    <string name="auto_detect_readers">Auto Detect Readers</string>
+    <string name="auto_reconnect_reader">Auto Connect Reader</string>
+    <string name="readers_available">Reader Available</string>
+    <string name="readers_connection">Reader Connection</string>
+    <string name="reader_battery_status">Reader Battery Status</string>
+    <string name="region_title">Region</string>
+    <string name="keymap_title">KeyMap</string>
+    <string name="warning_title">Warning:</string>
+    <string name="country_selection_warning">Warning: Please select only the country in which you are using the reader</string>
+    <string name="first_seen_time">First Seen Time</string>
+    <string name="last_seen_time">Last Seen Time</string>
+    <string name="pc">PC</string>
+    <string name="rssi">RSSI</string>
+    <string name="phase">Phase</string>
+    <string name="channel_index">Channel Index</string>
+    <string name="tag_seen_count">Tag Seen Count</string>
+    <string name="save_to_sled">SAVE</string>
+    <string name="battery_discharging_message">Status: Discharging.</string>
+    <string name="RFID_demo_app">123RFID Mobile Application</string>
+    <string name="moto_solutions">Zebra Technologies</string>
+    <string name="app_version_title">Application Version</string>
+    <string name="rfid_sled">RFID Reader:</string>
+    <string name="module_version">Module Version</string>
+    <string name="radio_version">Radio Version</string>
+    <string name="copyright_info">Copyright © 2020</string>
+    <string name="sl_flag_title">SL Flag</string>
+    <string name="inv_state_title">Inventory State</string>
+    <string name="tag_population_title">Tag Population</string>
+    <string name="session_title">Session</string>
+    <string name="sled_beeper_title">Sled Beeper</string>
+    <string name="host_beeper_title">Host Beeper</string>
+    <string name="led_subtitle">Host LED Enable</string>
+    <string name="sled_led_subtitle">Sled LED Enable</string>
+    <string name="beeper_volume_control_title">RFID Beeper Volume Control</string>
+    <string name="start_trigger_title">Start Trigger</string>
+    <string name="start_time_title">Start Time</string>
+    <string name="periodic_title">Period (ms)</string>
+    <string name="stop_trigger_title">Stop Trigger</string>
+    <string name="duration_title">Duration (ms)</string>
+    <string name="report_title">Report</string>
+    <string name="periodic_report_title">Periodic Report</string>
+    <string name="paired_devices_title">Paired Device</string>
+    <string name="OK">OK</string>
+    <string name="drawer_item_text">Drawer Item</string>
+    <string name="drawer_image_desc">Icon for the Navigation drawer item</string>
+    <string name="app_version">1.0.5.18</string>
+    <string name="module_version_no">1.0.1.20</string>
+    <string name="radio_version_no">2.4.3.55</string>
+    <string name="battery_level_desc">Icon depicting level of battery in the reader</string>
+    <string name="battery_percentage_text">0%</string>
+    <string name="inv_filter_title">MEMORY BANK</string>
+    <string name="inv_read_time_title">READ TIME</string>
+    <string name="inv_unique_title">UNIQUE TAGS</string>
+    <string name="inv_count_title">TOTAL READS</string>
+    <string name="save_antenna_power">Antenna Power</string>
+    <string name="save_link_profile">Link Profile</string>
+    <string name="save_seesion">Session</string>
+    <string name="save_start_trigger">Start Trigger</string>
+    <string name="save_stop_trigger">Stop Trigger</string>
+    <string name="save_beeper">Beeper Volume</string>
+    <string name="save_region">Region</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="start_trigger_released_title">Trigger Released</string>
+    <string name="home_rapid_read">Rapid Read</string>
+    <string name="home_inventory">Inventory</string>
+    <string name="err_locationing_failed">Locationing Failed</string>
+    <string name="err_stop_locationing_failed">Stop Locationing Failed</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_locate">Locate Tag</string>
+    <string name="home_filter">Pre Filters</string>
+    <string name="tag_write">Tag Write</string>
+    <string name="inv_user_memory_title">MEMORY None</string>
+    <string name="inv_pc_title">PC</string>
+    <string name="inv_rssi_title">RSSI</string>
+    <string name="inv_phase_title">PHASE</string>
+    <string name="inv_channel_title">CHANNEL</string>
+    <string name="setting_icon_desc">Setting Icon</string>
+    <string name="stop_trigger_timeout">Timeout (ms)</string>
+    <string name="stop_trigger_released">Trigger Released</string>
+    <string name="stop_trigger_pressed">Trigger Pressed</string>
+    <string name="stop_trigger_tag_observation">Tag Observation</string>
+    <string name="stop_trigger_attempts">No. of Attempts</string>
+    <string name="start_trigger_pressed">Trigger Pressed</string>
+    <string name="inventory_settings_title">Inventory modes</string>
+    <string name="title_activity_inventory_settings">Inventory Settings</string>
+    <string name="title_pre_filters">Pre Filters</string>
+    <string name="wifi_settings_title">WiFi Settings</string>
+    <string name="wifi_subtitle">Enable WiFi</string>
+    <string name="wifi_settings">saving WiFi settings..</string>
+    <string name="ct_settings">saving Charge Terminal settings..</string>
+    <string name="ct_settings_title">Charge Terminal Settings</string>
+    <string name="ct_subtitle">Enable Charge Terminal</string>
+    <string name="usb_mifi_settings_title">USB MiFi Settings</string>
+    <string name="usb_mifi_subtitle">Enable USB MiFi</string>
+    <string name="usb_mifi_settings">saving USB MiFi settings..</string>
+    <string-array name="inventory_modes_array">
+        <item>regular inventory</item>
+        <item>radio engine</item>
+        <item>HAL</item>
+    </string-array>
+    <string name="save_antenna_title">ANTENNA</string>
+    <string name="save_singulation_title">SINGULATION</string>
+    <string name="save_tag_report_title">TAG REPORT</string>
+    <string name="save_start_stop_title">START \\ STOP TRIGGERS</string>
+    <string name="save_beeper_title">BEEPER</string>
+    <string name="save_regulatory_title">REGULATORY</string>
+    <string name="save_keymapping_title">TRIGGER KEYMAPPING</string>
+    <string name="save_config_batch_mode_title">BATCH MODE</string>
+    <string name="save_dpo_title">POWER MANAGEMENT</string>
+    <string name="save_sled_beeper_volume_title">Beeper volume</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="error_disconnected">No Active Connection with Reader</string>
+    <string name="error_reader_not_updated">Reader capabilities not updated</string>
+    <string name="beeper_id_title">Beeper Id</string>
+    <string name="beeper_tone_title">Tone</string>
+    <string name="beeper_volume_title">Volume</string>
+    <string name="beeper_duration_title">Duration</string>
+    <string name="title_model">Model</string>
+    <string name="title_serial">Serial</string>
+    <string name="colon">:</string>
+    <string name="msg_read_succeed">Read succeed</string>
+    <string name="msg_write_succeed">Write succeed</string>
+    <string name="msg_lock_succeed">Lock succeed</string>
+    <string name="msg_kill_succeed">Kill succeed</string>
+    <string name="err_access_op_failed">Tag Write operation Failed</string>
+    <string name="password_connection_title">Connection password required !</string>
+    <string name="hint_password">Password</string>
+    <string name="cancel_title">Cancel</string>
+    <string name="connect_title">Connect</string>
+    <string name="battery_status__critical_message">Battery is critical !\nPlease charge device.</string>
+    <string name="battery_status_critical_message">Battery level critical !\nPlease charge device.</string>
+    <string name="battery_charging_message">Status: Charging</string>
+    <string name="set_region_msg">Please set the region</string>
+    <string name="start_stop_progress_title">saving start/stop triggers...</string>
+    <string name="start_stop_triggers">start/stop Triggers</string>
+    <string name="regulatory_progress_title">Saving Regulatory Settings...</string>
+    <string name="regulatory_settings">Regulatory Settings</string>
+    <string name="antenna_progress_title">Saving Antenna Settings...</string>
+    <string name="antenna_configuration">AntennaConfiguration</string>
+    <string name="singulation_progress_title">Saving Singulation Settings...</string>
+    <string name="singulation_control">SingulationControl</string>
+    <string name="save_config_progress_title">Saving Configuration...</string>
+    <string name="save_configuration">Save Configuration</string>
+    <string name="tag_reporting_progress_title">Saving Tag Report Settings...</string>
+    <string name="tag_report_settings">SetReportConfig</string>
+    <string name="batch_mode_settings_title">Batch Mode Settings</string>
+    <string name="beeper_progress_title">Saving Beeper Settings...</string>
+    <string name="set_beeper_volume">SetBeeperVolume</string>
+    <string name="filter_progress_title">Saving Filter Settings...</string>
+    <string name="pre_filter">PreFiltersCommand</string>
+    <string name="app_title">RFID Reader</string>
+    <string name="battery_no_active_connection_message">Status: No active connection</string>
+    <string name="status_failure_message">Failed to apply settings</string>
+    <string name="battery_status_low_message">Battery is low !\nPlease charge device.</string>
+    <string name="battery__status_low_message">Battery level is low !\nPlease charge device.</string>
+    <string name="battery_critical_message">Status: Battery level is critical</string>
+    <string name="battery_low_message">Status: Battery level is low</string>
+    <string name="battery_full_message">Status: Battery is fully charged</string>
+    <string name="default_timeout">10000</string>
+    <string name="default_no_of_attempts">10</string>
+    <string name="default_tag_observe_count">100</string>
+    <string name="error_empty_fields_start_trigger">Empty fields in start trigger settings</string>
+    <string name="error_empty_fields_stop_trigger">Empty fields in stop trigger settings</string>
+    <string name="error_empty_fields_preFilters">Empty fields in pre filters</string>
+    <string name="empty_length">Please fill legth</string>
+    <string name="empty_offset">Please fill offset</string>
+    <string name="dynamic_power_title">Dynamic power</string>
+    <string name="export_data_sett">Data Export Settings</string>
+    <string name="export_data">Export Data</string>
+    <string name="batch_mode_title">BT Batchmode</string>
+    <string name="usb_batch_mode_title">USB Batchmode</string>
+    <string name="scan_batch_mode">Scan Batchmode</string>
+    <string name="batch_mode_inventory_title">Inventory is running in batch mode</string>
+    <string name="tag_report_settings_title">Tag Report Settings</string>
+    <string name="title_activity_dpo_settings">Power Management </string>
+    <string name="dpo_message_title">Dynamic Power optimization configures the reader for best battery life and works with Pre configured settings. Dynamic Power optimization works only for inventory operation</string>
+    <string name="batch_mode_running_title">Running in batch mode</string>
+    <string name="error_empty_fields_antenna_config">Empty fields in antenna settings</string>
+    <string name="error_invalid_fields_antenna_config">Invalid fields in antenna settings</string>
+    <string name="tari_title">Tari</string>
+    <string name="dpo_progress_title">Saving Power Management settings...</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="action_bc">BC Scanning</string>
+    <string name="action_advanced_op">Advanced Options</string>
+    <string name="pref_beeper">BeeperPreference</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="enable_simple_filter_1">Advance Option</string>
+    <string name="enable_nom_filter_1">Select non matching TAGs</string>
+    <string name="tag_list_match_mode">Tag List Match Mode</string>
+    <string name="match_mode">Match Mode</string>
+    <string name="bluetooth_config">Bluetooth Configuration</string>
+    <string name="csv_tag_details">DETAILS</string>
+    <string name="tag_match_complete">All tags matched</string>
+    <string name="export_config">Export</string>
+    <string name="title_activity_load_configuration">Load Configuration</string>
+    <string name="import_config">Import</string>
+    <string name="export_config_progress_title">Exporting configuration file...</string>
+    <string name="load_config_progress_title">Loading Configuration File...</string>
+    <string name="load_config">LOAD</string>
+    <string name="inventory_display_setting">Inventory Display Settings</string>
+    <string name="inventory_display_header_row">Header Row</string>
+    <string name="inventory_display_rssi_column">RSSI Column</string>
+    <string name="tag_list_match_tag_names">Show Friendly Names</string>
+    <string name="ascii_mode">ASCII Mode</string>
+    <string name="sgtin_mode">SGTIN-96 Mode</string>
+    <string name="bluetooth_mode">Bluetooth Mode</string>
+    <string name="enable_ascii_mode">Enable ASCII Mode</string>
+    <string name="REQUIRES_TAGLIST_CSV">Requires taglist.csv file in rfid directory</string>
+    <string name="PIE_title">PIE</string>
+    <string name="action_locate">Locate Tag</string>
+    <string name="action_tag_read_write">Tag Read/Write</string>
+    <string name="invalid_antenna_power">Invalid antenna power value</string>
+    <string name="loading_csv">Importing tag list from CSV file</string>
+    <string name="failed_settings">Failed to apply settings for BrandId</string>
+    <string name="action_clear">Clear</string>
+    <string name="camera_scan_flash_warning">Don\'t cover the barcode with flashlight reflection</string>
+    <string name="ml_kit_internet_connection">Internet connection required to download.</string>
+
+    <string-array name="inv_menu_items_for_matching_tags">
+        <item>All</item>
+        <item>Matching</item>
+        <item>Missing</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="batch_modes_array">
+        <item>Disable</item>
+        <item>Auto</item>
+        <item>Enable</item>
+    </string-array>
+
+    <string-array name="usb_batch_modes_array">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+
+    <string-array name="pre_filter_type">
+        <item>Basic</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="scan_batch_mode">
+        <item>Disable</item>
+        <item>Auto</item>
+        <item>Enable</item>
+    </string-array>
+
+    <string name="dw_action">com.symbol.dwudiusertokens.udi</string>
+    <string name="dw_category">zebra.intent.dwudiusertokens.UDI</string>
+    <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+    <string name="warning_title_ukrain_l">Warning:</string>
+    <string name="warning_text_ukrain_l">User license required for 2W power mode.</string>
+    <string name="action_inventory">Inventory</string>
+    <string name="global_settings">Global Settings</string>
+    <!-- Items for MultiTag Locate  -->
+    <string name="error_bluetooth_disabled">Please enable the bluetooth</string>
+    <string name="home_multiTag_locate">MultiTag Locate</string>
+    <string name="multiTag_reset_title">RESET</string>
+    <string name="multiTag_import_tags">+ TagList</string>
+    <string name="multiTag_locate_taglist_already_imported">Locate TagList Already imported</string>
+    <string name="multiTag_locate_sett">MultiTag Locate Settings</string>
+    <string name="multiTag_locate_sort">Sort based on Proximity Percent</string>
+    <string name="multiTag_locate_proximity_percent_title">Tag Found Proximity Percent</string>
+    <string name="multiTag_locate_error_no_data_loaded">No Tag Item loaded</string>
+    <string name="multiTag_locate_error_operation_running">MultiTag locationing is currently running</string>
+    <string name="multiTag_locate_add_item_success">Add Tag Item succesfully</string>
+    <string name="multiTag_locate_add_item_failed">Add Tag Item failed</string>
+    <string name="multiTag_locate_delete_item_success">Delete Tag Item succesfully</string>
+    <string name="multiTag_locate_delete_item_failed">Delete Tag Item failed</string>
+    <string-array name="multiTag_found_proximity_percent_array">
+        <item>100</item>
+        <item>95</item>
+        <item>90</item>
+        <item>85</item>
+        <item>80</item>
+        <item>75</item>
+        <item>70</item>
+    </string-array>
+    <string name="warning_bt_enable_on_sled">Turn on Bluetooth on sled Device</string>
+    <string name="title_activity_home">Scanner Control</string>
+    <string name="home_list_content_desc">Right Chevron</string>
+
+    <string-array name="home_items">
+        <item>Devices</item>
+        <item>Connection Help</item>
+        <item>Application Settings</item>
+        <item>About</item>
+
+    </string-array>
+    <string-array name="scanner_configs">
+        <item>Set Factory Defaults</item>
+        <item>Battery Off</item>
+        <item>Cradle Host</item>
+        <item>SPP Client</item>
+        <item>SPP Server</item>
+        <item>HID Server</item>
+        <item>Low Beeper Volume</item>
+        <item>Medium Beeper Volume</item>
+        <item>High Beeper Volume</item>
+    </string-array>
+    <string-array name="beeper_actions">
+        <item>One high short beep</item>
+        <item>Two high short beeps</item>
+        <item>Three high short beeps</item>
+        <item>Four high short beeps</item>
+        <item>Five high short beeps</item>
+        <item>One low short beep</item>
+        <item>Two low short beeps</item>
+        <item>Three low short beeps</item>
+        <item>Four low short beeps</item>
+        <item>Five low short beeps</item>
+        <item>One high long beep</item>
+        <item>Two high long beeps</item>
+        <item>Three high long beeps</item>
+        <item>Four high long beeps</item>
+        <item>Five high long beeps</item>
+        <item>One low long beep</item>
+        <item>Two low long beeps</item>
+        <item>Three low long beeps</item>
+        <item>Four low long beeps</item>
+        <item>Five low long beeps</item>
+        <item>Fast warble beep</item>
+        <item>Slow warble beep</item>
+        <item>High-low beep</item>
+        <item>Low-high beep</item>
+        <item>High-low-high beep</item>
+        <item>Low-high-low beep</item>
+        <item>High-high-low-low beep</item>
+    </string-array>
+
+    <string-array name="vibration_durations">
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>750</item>
+    </string-array>
+
+    <string name="menu_item_device_disconnect">Disconnect RFDXX</string>
+    <string name="menu_item_device_pair">Pair Bluetooth RFDXX</string>
+    <string name="version">Version</string>
+    <string name="version_info">Zebra Scanner Control Application v1.0\n\n©2019 Zebra Technologies Corp. and/or its affiliates.  All rights reserved.\n</string>
+    <string name="title_activity_scanners">Available Device List</string>
+    <string name="bt_scanners_not_found">BT RFDXX not found</string>
+    <string name="bt_no_scanners">No RFDXX found.</string>
+
+    <string name="menu_firmware_help">Firmware Update Process</string>
+
+    <string name="menu_add_scanner">Add Scanner</string>
+    <string name="menu_get_pairing_barcode">Get Pairing Barcode</string>
+    <string name="menu_refresh_scanners">Refresh</string>
+    <string name="title_activity_scanner_configurations">Connection Help</string>
+    <string name="title_activity_settings">App Settings</string>
+    <string name="scanner_detection_title">Scanner Detection</string>
+    <string name="auto_detection">Auto Detection</string>
+    <string name="pairing_barcode_title">Pair New Scanner (STC) Barcode</string>
+    <string name="pairing_barcode_type">Barcode Type</string>
+    <string name="pairing_barcode_configuration">Set Factory Defaults</string>
+
+    <string name="reset_app_defaults">Reset App Defaults</string>
+    <string name="btn_reset_factory_defaults">Reset Defaults</string>
+
+    <string name="events_title">Background Notifications</string>
+    <string name="available_scanner">Available Scanner</string>
+    <string name="active_scanner">Active Scanner</string>
+    <string name="assertinfo">Asset Information</string>
+    <string name="barcode_event">Barcode Event</string>
+    <string name="image_event">Image Event</string>
+    <string name="video_event">Video Event</string>
+    <string name="background_mode_title">BACKGROUND MODE</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="notifications_title">NOTIFICATIONS</string>
+    <string name="title_activity_battery_off">Battery Off</string>
+    <string name="battery_off_content_desc">Barcode to be scanned</string>
+    <string name="battery_off_text">Scan the presented barcode to configure [battery off] mode</string>
+    <string name="no_items">No Items</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_barcode">BarcodeActivity</string>
+    <string name="title_activity_zxing_barcode">ZxingBarcodeActivity</string>
+    <string name="title_activity_active_scanner">RFDXX</string>
+    <string name="Disconnect">Disconnect</string>
+    <string name="info_title">INFORMATION</string>
+    <string name="title_activity_beeper_actions">Beeper Settings</string>
+    <string name="title_activity_led">LED Control</string>
+    <string name="title_activity_assert">Active Scanner</string>
+    <string name="title_activity_symbologies">Symbology Settings (ON/OFF)</string>
+    <string name="title_activity_beeper_settings">Beeper Settings</string>
+    <string name="title_activity_splash_screen">Splash</string>
+    <string name="title_activity_available_scanner">Available Scanner</string>
+    <string name="title_activity_barcode_details">Barcode Details</string>
+    <string name="title_activity_navigate_scan_speed_analytics">Scan Speed Analytics(SSA)</string>
+    <string name="title_activity_slowest_decode_image_settings">Slowest Decode Image Settings</string>
+    <string name="title_activity_scan_speed_analytics">Scan Speed Analytics</string>
+    <string name="title_activity_ssa_barcode_type">Barcode Type For SSA</string>
+    <string name="information">INFORMATION</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="scanner_id">Scanner ID: </string>
+    <string name="barcode_type">Barcode Type : </string>
+    <string name="barcode_data">Barcode Data:</string>
+    <string name="beeper_volume">Beeper Volume</string>
+    <string name="threshold_value">Only Save Image Slower Than : </string>
+    <string name="low">Low</string>
+    <string name="save_image">Save Image</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="beeper_frequency">BEEPER FREQUENCY</string>
+    <string name="green_led_control">Green LED</string>
+    <string name="green_led_on">Green LED ON</string>
+    <string name="green_led_off">Green LED OFF</string>
+    <string name="amber_led_control">Amber/Blue LED</string>
+    <string name="amber_led_on">Amber/Blue LED ON</string>
+    <string name="amber_led_off">Amber/Blue LED OFF</string>
+    <string name="red_led_control">Red LED</string>
+    <string name="red_led_on">Red LED ON</string>
+    <string name="red_led_off">Red LED OFF</string>
+    <string name="splash_content_desc">Splash Screen</string>
+    <string name="upc_a">UPC-A</string>
+    <string name="upc_e">UPC-E</string>
+    <string name="upc_e1">UPC-E1</string>
+    <string name="ean_8">EAN-8/JAN8</string>
+    <string name="ean">EANJAN</string>
+    <string name="ean_13">EAN-13/JAN13</string>
+    <string name="bookland">Bookland EAN</string>
+    <string name="code128">Code 128</string>
+    <string name="composite">Composite</string>
+    <string name="ucc">UCC/EAN-128</string>
+    <string name="code39">Code 39</string>
+    <string name="code93">Code 93</string>
+    <string name="code11">Code 11</string>
+    <string name="actions">ACTIONS</string>
+    <string name="pull_trigger">Pull Trigger</string>
+    <string name="release_trigger">Release Trigger</string>
+    <string name="barcode_list">BARCODE LIST</string>
+    <string name="no_barcode">No barcode received</string>
+    <string name="connection">CONNECTION</string>
+    <string name="auto_reconnection">Reconnect to Scanner</string>
+    <string name="beeper">Beeper</string>
+    <string name="scanning_control">Scanning</string>
+    <string name="content_desc">Indicating Navigation</string>
+    <string name="led">LED</string>
+    <string name="nav_desc">Indicating Navigation</string>
+    <string name="symbologies">Symbologies</string>
+    <string name="enable_scanning">Enable scanning</string>
+    <string name="disable_scanning">Disable scanning</string>
+    <string name="persist_settings">   Persist Settings</string>
+    <string name="iso_file">   Received data in ISO format</string>
+    <string name="model">Model Number:</string>
+    <string name="serial">Serial Number:</string>
+    <string name="firmware">Firmware:</string>
+    <string name="config">Configuration Filename:</string>
+    <string name="dateofmanufactured">Manufacture Date:</string>
+    <string name="aimon">AIM On</string>
+    <string name="aimoff">AIM Off</string>
+    <string name="vibration_feedback">Vibration Feedback</string>
+    <string name="title_activity_barcode_configuration">Connection Help</string>
+    <string name="slowest_decode_image">Slowest Decode Image:</string>
+    <string name="weight_measured">Weight Measured :</string>
+    <string name="weight_Unit">Weight Unit :</string>
+    <string name="weight_Status">Weight Status :</string>
+    <string name="live_Weight">Live Weight :</string>
+
+
+    <string name="top_hint">ScanToConnect</string>
+    <string name="bt_logo">BT Logo</string>
+    <string name="info_top">Scan the bar code below to pair your cordless scanner to this tablet/phone</string>
+    <string name="info_bottom">This on-screen bar code replaces the need for a paper pairing bar code.</string>
+    <string name="clearList">CLEAR LIST</string>
+    <string name="scale">Scale</string>
+    <string name="title_activity_scanner_list">ScannerListActivity</string>
+    <string name="title_activity_connection_help">Connection Help</string>
+    <string name="GS1128">GS1-128</string>
+    <string name="GS1Datamatrix">GS1-Datamatrix</string>
+    <string name="GS1QRCode">GS1-QR Code</string>
+    <string name="operationmode_dialog_title">Select Operation Mode</string>
+    <string name="ok">OK</string>
+    <string name="cancel_upper">CANCEL</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_occurred">Error Occurred !</string>
+    <string name="error_occurred_no_permission">Error occurred ! permission denied </string>
+    <string name="disconnect_current_scanner">This will disconnect your current scanner</string>
+    <string name="image_saved">Image Successfully Saved into Download/Scanner Directory</string>
+    <string name="continue_txt">Continue</string>
+    <string name="instruction_snapi">Attach your cabled scanner to your device and scan the barcode to connect with this app.</string>
+    <string name="instruction">Scan barcode to pair your cordless scanner to this app.</string>
+    <string name="pick_list_mode">Picklist Mode</string>
+    <string name="scanning">Scanning Control</string>
+    <string name="title_activity_connection_help_cs4070">ConnectionHelpCS4070</string>
+    <string name="title_activity_connection_help_li4278">ConnectionHelpLI4278</string>
+    <string name="title_activity_connection_help_rfd8500">ConnectionHelpRFD8500</string>
+    <string name="change_path">Incorrect Plug-in File Path</string>
+    <string name="change_path_plugin_msg_1"><![CDATA[Do not select the firmware file from default shortcut directory folders such as Downloads, Documents, Musics, etc.. Select the relevant folder from Device Internal Storage.]]></string>
+    <string name="change_path_plugin_msg_2">ex:If the file located in Downloads Folder. \n<b>Correct:</b> (<i>Device Internal Storage > Download > File</i>) \n<b>Wrong:</b> (<i>Downloads(Shortcut) > File</i>)</string>
+    <string name="change_path_csv"><![CDATA[Do not select the csv file from default shortcut directory folders such as Downloads, Documents, Musics, etc.. Select the relevant folder from Device Internal Storage.]]></string>
+    <string name="selectFirmware">Select Firmware</string>
+    <string name="updateFirmware">Update Firmware</string>
+    <string name="Image_Video">Image and Video</string>
+    <string name="IDC">IDC</string>
+    <string name="start_new_firmware">Start New Firmware</string>
+    <string name="abort_update_firmware">Abort Firmware Update</string>
+    <string name="title_activity_update_firmware">Update Firmware</string>
+    <string name="update_firmware_confimation">Confirm that you want to update the following scanner</string>
+    <string name="scanSpeedAnalytics">Scan Speed Analytics</string>
+    <string name="configure_ssa">Configure SSA</string>
+    <string name="view_ssa">View SSA</string>
+    <string name="trigger">Trigger</string>
+    <string name="led_control">LED Control</string>
+    <string name="enable_disable">ENABLE/DISABLE</string>
+    <string name="aim_guide">Aim Guide</string>
+    <string name="scale_enable">Scale Enable</string>
+    <string name="test_beeper">Test Beeper</string>
+    <string name="imager_mode">Image</string>
+    <string name="video_mode">Video</string>
+    <string name="read_Weight">Read Weight</string>
+    <string name="live_weight_enable">Live Weight Enable</string>
+    <string name="zero_scale">Zero Scale</string>
+    <string name="reset_scale">Reset Scale</string>
+    <string name="test_video">Test Video Mode</string>
+    <string name="test_idc">IDC : Free-Form</string>
+    <string name="view_finder">Enable Video View Finder</string>
+    <string name="take_image">Capture Image</string>
+    <string name="i2of5">Interleaved 2 of 5</string>
+    <string name="_2of5">Interleaved 2 of 5</string>
+    <string name="d2of5">Discrete 2 of 5</string>
+    <string name="c2of5">Chinese 2 of 5</string>
+    <string name="ocr">OCR</string>
+    <string name="codabar">Codabar</string>
+    <string name="msi">MSI</string>
+    <string name="code32">Code 32</string>
+    <string name="datamatrix">Datamatrix</string>
+    <string name="pdf417">PDF417</string>
+    <string name="pdf">PDF</string>
+    <string name="isbn">ISBN</string>
+    <string name="_other1D">Other 1D</string>
+    <string name="_other2D">Other 2D</string>
+    <string name="coupon">Coupon</string>
+    <string name="digimarc_upc">Digimarc UPC</string>
+    <string name="digimarc_ean_jan">Digimarc EAN/JAN</string>
+    <string name="digimarc_other">Digimarc Other</string>
+    <string name="other">Other</string>
+    <string name="ucc_coupon_extended">UCC Coupon Extended Code</string>
+    <string name="issn_ean">ISSN EAN</string>
+    <string name="isbt_128">ISBT 128</string>
+    <string name="trioptic_code39">Trioptic Code 39</string>
+    <string name="m2of5">Matrix 2 of 5</string>
+    <string name="k3of5">Korean 3 of 5</string>
+    <string name="gs1databar">GS1 DataBar</string>
+    <string name="gs1databar14">GS1 DataBar-14</string>
+    <string name="gs1databar_limited">GS1 DataBar Limited</string>
+    <string name="gs1databar_expanded">GS1 DataBar Expanded</string>
+    <string name="micro_pdf417">MicroPDF417</string>
+    <string name="maxicode">Maxicode</string>
+    <string name="qr">QR</string>
+    <string name="qrcode">QR Code</string>
+    <string name="microqr">MicroQR</string>
+    <string name="aztec">Aztec</string>
+    <string name="hanxin_code">Han Xin Code</string>
+    <string name="au_post">Australian Post</string>
+    <string name="us_planet">US PLANET</string>
+    <string name="us_postnet">US POSTNET</string>
+    <string name="kixcode">Netherlands KIX</string>
+    <string name="usps4cb">USPS 4CB</string>
+    <string name="postalcodes">Postalcodes</string>
+    <string name="uk_postal">UK Postal</string>
+    <string name="jp_postal">Japan Post</string>
+    <string name="fics">UPU FICS</string>
+    <string name="title_activity_vibration_feedback">Vibration Feedback</string>
+    <string name="vibration">Vibration</string>
+    <string name="on_off">ON/OFF</string>
+    <string name="vibration_duration">Vibration Duration (ms)</string>
+    <string name="test_vibration">TEST VIBRATION</string>
+    <string name="battery_statistics">Battery Statistics</string>
+    <string name="scanner_name">Scanner Name:</string>
+    <string name="title_activity_battery_statistics">Battery Statistics</string>
+    <string name="battery_asset_info">Battery Asset Information</string>
+    <string name="no_battery_stats">This scanner does not have a PowerPrecision+ smart battery</string>
+    <string name="no_scale">This scanner does not have a Scale</string>
+    <string name="bat_manufacture_date">Manufacture Date:</string>
+    <string name="bat_serial">Serial Number:</string>
+    <string name="bat_firmware_version">Firmware Version:</string>
+    <string name="bat_design_cap">Design Capacity:</string>
+    <string name="bat_state_of_health">State of Health:</string>
+    <string name="battery_life_stat">Battery Life Statistics</string>
+    <string name="bat_charge_cycles_consumed">Charge Cycles Consumed:</string>
+    <string name="battery_status">Battery Status</string>
+    <string name="bat_full_charge_cap">Full Charge Capacity:</string>
+    <string name="bat_state_of_charge">State of Charge:</string>
+    <string name="bat_remaining_cap">Remaining Capacity:</string>
+    <string name="bat_charge_status">Charge Status:</string>
+    <string name="bat_remaining_time_to_complete_charging">Remaining Time to Complete Charging:</string>
+    <string name="bat_voltage">Battery Voltage</string>
+    <string name="bat_current">Battery Current:</string>
+    <string name="battery_temperature">Battery Temperature</string>
+    <string name="bat_present">Present:</string>
+    <string name="bat_highest">Highest:</string>
+    <string name="bat_lowest">Lowest:</string>
+    <string name="release_notes">Release Notes:</string>
+    <string name="no_plugin">No ADAT files Found</string>
+    <string name="no_plugin_msg_1"><![CDATA[Put the correct DAT file in the Device Storage > Download folder.]]></string>
+    <string name="no_plugin_msg_2">For instructions, click the help icon on the top right.</string>
+    <string name="mismatch">Plug-in / Scanner Mismatch</string>
+    <string name="mismatch_plugin_msg_1"><![CDATA[1. Delete the incorrect plug-in from the Device Storage > Download folder.]]></string>
+    <string name="mismatch_plugin_msg_2">2. Load the correct plug-in for your scanner model into the folder.</string>
+    <string name="firmware_not_support_ssa">This scanner does not have Scan Speed Analytics capabilities</string>
+    <string name="com_protocol_not_support_ssa">Scan Speed Analytics is not supported in this communication protocol</string>
+    <string name="firmware_not_support_ssa_msg_1"><![CDATA[Update Scanner to a firmware which supports Scan Speed Analytics.]]></string>
+    <string name="fw_update_process">Firmware Update Process Help</string>
+    <string name="fw_update_process_msg_1">Copy the correct 123Scan plug-in for your scanner to your phone:</string>
+    <string name="fw_update_process_msg_1_1">1. Load 123Scan onto a Windows computer from:</string>
+    <string name="fw_update_process_url">www.Zebra.com/123Scan</string>
+    <string name="fw_update_process_msg_1_2">2. From your Windows PC with 123Scan, access your scanner’s plug-in (.scnplg file) from C:\\ProgramData\\123Scan2\\Plug-ins</string>
+    <string name="fw_update_process_msg_1_3"><![CDATA[3. Put a copy of the plug-in into your phone\'s download folder (Device Storage > Download)]]></string>
+    <string name="fw_update_process_msg_2">Start the firmware update by clicking the \"Update Firmware\" button:</string>
+    <string name="close">CLOSE</string>
+    <string name="updating_firmware">Updating Firmware</string>
+    <string name="rebooting_scanner"> Reboot in progress.Do not unplug battery.</string>
+    <string name="update_failed">Update Failed</string>
+    <string name="firmware_updated">✓ Firmware Updated</string>
+    <string name="last_connected_scanner">Last Connected Scanner</string>
+    <string name="other_scanners">Other Scanners</string>
+    <string name="txt_continue">CONTINUE</string>
+    <string name="launch_instruction">This app supports Scan-To-Connect technology for 1-step pairing. </string>
+    <string name="launch_instruction_item_2">•         \tEnable / disable symbologies</string>
+    <string name="launch_instruction_item_1">•         \tProgram beeper and LEDs</string>
+    <string name="launch_instruction_item_3">•         \tRemotely trigger a scan</string>
+    <string name="launch_instruction_remaining">It displays scanned bar code data.</string>
+    <string name="launch_instruction_remaining_2">It can query scanner asset information &amp; battery health statistics.</string>
+    <string name="dont_show_this_again">Don\'t show this message again.</string>
+    <string name="com_protocol">Communication Protocol</string>
+    <string name="reconnect_scanner">Reconnect Scanner</string>
+    <string name="launch_instruction2">It allows you to control your scanner:</string>
+    <string name="supported_scanners">Supported Scanners</string>
+    <string name="pairing_help_all_scanners">Pairing Help - All Scanners</string>
+    <string name="pairing_help_rfd8500">Pairing Help - RFD8500 Only</string>
+    <string name="title_activity_supported_scanners">Supported Scanners</string>
+    <string name="supported_scanners_title">The following scanners can be used with this application:</string>
+    <string name="title_activity_supported_scanners_cordless_1">Cordless (</string>
+    <string name="title_activity_supported_scanners_cordless_2"> > Pair New Bluetooth)</string>
+    <string name="title_activity_supported_scanners_corded_1">Corded Scanners* (</string>
+    <string name="title_activity_supported_scanners_corded_2"> > Find Cabled Scanner)</string>
+    <string name="details_activity_supported_scanners_corded">* For corded scanner support a fully powered USB Master Port is required</string>
+    <string name="supported_scanners_li3678">•         \tLI3678</string>
+    <string name="supported_scanners_rfd8500">•         \tRFD8500</string>
+    <string name="supported_scanners_ds3678">•         \tDS3678</string>
+    <string name="supported_scanners_cs4070">•         \tCS4070 (Rev E firmware and newer)</string>
+    <string name="supported_scanners_ds8178">•         \tDS8178</string>
+    <string name="supported_scanners_ds2278">•         \tDS2278</string>
+    <string name="supported_scanners_cs6080">•         \tCS6080</string>
+    <string name="supported_scanners_rs5100">•         \tRS5100</string>
+    <string name="supported_scanners_mp6000">•         \tMP6000</string>
+    <string name="supported_scanners_mp7000">•         \tMP7000</string>
+    <string name="supported_scanners_mx101">•         \tMP6/7000 and MX101</string>
+    <string name="supported_scanners_ds8178_mp6010">•         \tMP6/7000 and DS8178 via CR8178</string>
+    <string name="supported_scanners_ds3608">•         \tDS3608</string>
+    <string name="supported_scanners_ds8108">•         \tDS8108</string>
+    <string name="supported_scanners_ds9808">•         \tDS9808</string>
+    <string name="supported_scanners_ds4308">•         \tDS4308</string>
+    <string name="supported_scanners_ds2208">•         \tDS2208</string>
+    <string name="supported_scanners_ds7708">•         \tDS7708</string>
+    <string name="supported_scanners_ls2208">•         \tLS2208 (MFD > 1/2015)</string>
+    <string name="supported_scanners_se4757">•         \tSE4757</string>
+
+    <string name="title_activity_pairing_instructions_all">Pairing Instructions</string>
+    <string name="all_scanners_pairing_instructions_title">All Scanners - Pairing Instructions</string>
+    <string name="all_scanners_pairing_instructions_1">1. Scan the \"Set Factory Defaults\" barcode</string>
+    <string name="all_scanners_pairing_instructions_2">2. Re-scan the bar code on the “Pair New Scanner” screen</string>
+    <string name="all_scanners_pairing_instructions_3">3.\tScan the “Pair New Scanner” bar code</string>
+    <string name="set_factory_defaults">Set Factory Defaults</string>
+    <string name="title_activity_pairing_instructions_rfd8500">Pairing Instructions</string>
+    <string name="rfd8500_pairing_instructions_title">RFD8500 Pairing instructions</string>
+    <string name="rfd8500_pairing_instructions_1">1.\tTurn the RFD8500 on and ensure Bluetooth is enabled.</string>
+    <string name="rfd8500_pairing_instructions_2">2.\tEnable Bluetooth on the Android device.</string>
+    <string name="rfd8500_pairing_instructions_3">3.\tThe Android device will discover the RFD8500 and display it on the Bluetooth Devices list.</string>
+    <string name="rfd8500_pairing_instructions_1_1">•\tThe RFD8500 is discoverable over Bluetooth for 40 seconds after start up. After that time Bluetooth suspends and is no longer discoverable. To make discoverable again, press the Bluetooth button, located on side of RFD8500.</string>
+    <string name="rfd8500_pairing_instructions_4">4.\tTap the “RFD8500” to initiate pairing from the Bluetooth Devices list.</string>
+    <string name="rfd8500_pairing_instructions_5">5.\tPress the RFD8500 trigger to complete pairing when the Bluetooth LED starts flashing fast.</string>
+    <string name="rfd8500_pairing_instructions_6">6.\tLaunch the “Scanner Control” app / Menu / “Available Device List” and select the RFD8500.</string>
+    <string name="multiple_dat_files">Multiple DAT files</string>
+    <string name="multiple_plugin_files">Multiple Plug-in files</string>
+    <string name="multiple_dat_files_msg_1">Multiple DAT files found in Download folder. Please keep only one DAT file and try again.</string>
+    <string name="no_pager_motor">This scanner does not have a pager motor.</string>
+    <string name="title_activity_find_cabled_scanner">Find Cabled Scanner</string>
+    <string name="multiple_snapi_devices">You are already in the SNAPI protocol. To pick a device click Continue.</string>
+    <string name="find_scanner">FIND SCANNER</string>
+    <string name="sample_barcodes">Sample Barcodes for Scanning</string>
+    <string name="title_activity_sample_barcodes">SampleBarcodes</string>
+    <string name="sample_barcodes_instructions">Scan a sample barcode from the list below, or scan your own barcode.</string>
+    <string name="upc">UPC:</string>
+    <string name="gs1_data_bar_stacked">GS1 - DataBar Stacked</string>
+    <string name="multiple_plug_in_files_msg_1">Multiple Plug-in files found in Download folder. Please keep only one Plug-in file and try again.</string>
+    <string name="beeper_sequence">Beeper Sequence</string>
+    <string name="selct_code">Select Code Type</string>
+    <string name="get_bt_address_instruction1">Please Enter Your Bluetooth Address.</string>
+    <string name="get_bt_address_instruction_item_1"> Navigate to \"Settings > About Phone > Status > Bluetooth Address\" or </string>
+    <string name="get_bt_address_instruction_item_2">Then write down the Bluetooth address.</string>
+    <string name="get_bt_address_instruction_item_3">Hit back button until return to this screen.</string>
+    <string name="get_bt_address_instruction_item_4">Then type address below.</string>
+    <string name="about_phone">GO TO ABOUT PHONE</string>
+    <string name="cancel2">Cancel</string>
+    <string name="bluetooth_address">Bluetooth Address</string>
+    <string name="clear">Clear</string>
+    <string name="skip">Skip\n(If USB Corded)</string>
+
+
+    <!-- Scan speed analytics-->
+    <string name="enable">Enable</string>
+    <string name="ssa_slowest_decode_image">Slowest Decode Image:</string>
+    <string name="ssa_slowest_decode_time">Slowest Decode Time (ms):</string>
+    <string name="ssa_slowest_decode_data">Slowest Decode Data:</string>
+    <string name="ssa_scan_speed_histogram">Scan Speed Histogram</string>
+    <string name="ssa_total_scans">Total Scans:</string>
+    <string name="ssa_char_x_axis_title">Decode Time (milliseconds)</string>
+    <string name="ssa_char_y_axis_title">Number of Scans</string>
+    <string name="ssa_reset_analytics">Reset Analytics</string>
+    <string name="ssa_no_data_text">Start Scanning\n Barcodes for\n Analysis</string>
+    <string name="ssa_resetting">Resetting Analytics</string>
+    <string name="ssa_image_transfer_not_supported">Image transfer not currently supported in Bluetooth Low Energy.</string>
+    <string name="title_activity_image_video">Image And Video</string>
+    <string name="title_activity_idc">IDC</string>
+
+    <string name="title_activity_app_home">AppHomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="rfid_title">RFID</string>
+    <string name="scanner_title">Barcode Scan</string>
+    <string name="title_app_overview">App Overview</string>
+    <string name="title_discovery">Device Discovery</string>
+    <string name="toast_scanner_not_attached">Warning: No Scanner attached</string>
+    <string name="action_scan">Scan View</string>
+    <string name="title_nfc_pair">Pair</string>
+    <string name="title_nfc_instruction">Tap NFC Tag</string>
+    <string name="scanTrigger">Scan</string>
+    <string name="batch_request">Batch Request</string>
+    <string name="factory_reset">Performing factory reset will clear any saved settings and restart the reader. Region needs to be set again.</string>
+    <string name="factory_heading">Reset to Factory Defaults</string>
+    <string name="resetFactory_progress_title">Device Factory Reset</string>
+    <string name="radio_heading">Performing radio reset will restart the reader.</string>
+    <string name="radio_reset">Reset Reader</string>
+    <string name="operation_success_message">Operation Success</string>
+    <string name="operation_failure_message">Operation Failure</string>
+    <string name="firmwareupdate">Firmware Update</string>
+    <string name="FactoryReset">FactoryReset</string>
+    <string name="devicereset">Device Reset</string>
+    <string name="deviceinfo">Device Info</string>
+    <string name="EnableLogging">Enable Logging</string>
+    <string name="ApplicationSettings">Application</string>
+    <string name="regulatory">RegulatoryTest</string>
+    <string name="KeyMapping">Trigger Mapping</string>
+    <string name="KeyMappingSelect">"RFID Trigger Select "</string>
+    <string name="Logger">Logger</string>
+    <string name="Realtime">Enable real time Logs</string>
+    <string name="Bufferedlogs">Retrieve Buffered Logs</string>
+    <string name="InternalRamLogs">Retrieve logs from RAM </string>
+    <string name="InternalFlashLogs">Retrieve logs from Flash </string>
+    <string name="NGEErrorlogs">Enable NGE Error Logs</string>
+    <string name="NGEEventlogs">Enable NGE Event Logs</string>
+    <string name="NGEPacketlogs">Enable NGE packet Logs</string>
+    <string name="ApplicationLogger">Application</string>
+    <string name="Enable">Enable Debug logs</string>
+    <string name="Export_Logs">Export Logs</string>
+    <string name="sdkversiontitle">SDK Version</string>
+    <string name="scannerversiontitle">Scanner Version</string>
+    <string name="title_empty_readers">Readers</string>
+    <string name="batterylife">Battery Life</string>
+    <string name="disconnectrfid">Disconnect RFIDXX</string>
+    <string name="paired_reader">Paired Readers</string>
+    <string name="serial_no">Show Serial No.</string>
+    <string name="readermodel">MODEL: %1$s</string>
+    <string name="RFID">RFID</string>
+    <string name="SCAN">SCAN</string>
+    <string name="generalSettings">General</string>
+    <string name="finish">FINISH</string>
+    <string name="serialno">SERIAL: %1$s</string>
+    <string name="no_nfc_support">NFC Not Supported on this device model</string>
+    <string name="counter">""</string>
+    <string name="Location_Alert_title">Warning:</string>
+    <string name="warning_text_location_enable">This feature require to enable/use location service to perform Bluetooth discovery of RFID devices.</string>
+    <string name="nav_help_instruction_1">123RFID Mobile showcases RFID functionalities, such as configuring your RFID handheld reader, reading and locating RFID tags, etc.</string>
+    <string name="nav_help_instruction_2">With 123RFID Mobile, you can </string>
+    <string name="nav_help_instruction_item1">• \tPair and connect reader from mobile terminal</string>
+    <string name="nav_help_instruction_item2">• \tRun inventory</string>
+    <string name="nav_help_instruction_item3">• \tLocate single or multiple RFID tags</string>
+    <string name="nav_help_instruction_item4">• \tUpdate reader firmware</string>
+    <string name="nav_help_instruction_item5">• \tCheck battery health</string>
+    <string name="nav_version_info">123RFID Mobile Application v1.0\n\n©2021 Zebra Technologies Corp. and/or its affiliates.  All rights reserved.\n</string>
+    <string-array name="expandable_drawer">
+        <item>Available Device List</item>
+        <item>Manage RFDXXX</item>
+        <item>Firmware Update</item>
+        <item>App Overview</item>
+    </string-array>
+    <string-array name="manager_rfdxxx_drawer">
+        <item>Reset Factory Default</item>
+        <item>Reset Reader</item>
+        <item>Enable Logging</item>
+        <item>Export Configuration</item>
+        <item>Generate Report</item>
+    </string-array>
+
+    <string name="title_activity_navigation_help">NavigationHelpActivity</string>
+    <string name="err_read_access_op_failed">Tag Read operation Failed</string>
+    <string name="update_failed_low_battery_level">(Battery percentage is below 20%)</string>
+    <string name="update_failed_commands_are_out_of_sync">(Commands are out of sync)</string>
+    <string name="update_failed_has_overlapping_address">(Firmware has overlapping address)</string>
+    <string name="update_failed_load_count_error">(Load count error)</string>
+    <string name="wificonnectdetails">\"Would you like to share access to \n %1$s with your \n %2$s reader?</string>
+    <string name="scan_settings">Scan Settings</string>
+    <string name="scan_adv__settings">Advance Scan Settings</string>
+    <string name="DeviceReset">DeviceReset</string>
+    <string name="nonPremium">This feature is supported not supported for this device </string>
+    <string name="network_ip_Config">Network IP Config</string>
+    <string name="ipSettings">IP Settings</string>
+    <string name="ip_address">IP address</string>
+    <string name="netmask">Netmask</string>
+    <string name="gateway">Gateway</string>
+    <string name="DNS">DNS</string>
+    <string name="scan_and_pair_help">Scan and Pair process</string>
+    <string name="PairOperationsHelp">\tPair operations Guide      \t\t  </string>
+    <string name="radio">RFIDRadio</string>
+    <string name="compositec">Composite C</string>
+    <string name="compositeAB">Composite AB</string>
+    <string name="tlc39">TLC39</string>
+    <string name="dotcode">Dot Code</string>
+
+    <string name="NFC_pairing_help">tap Nfc tag of Reader to Nfc tag of device that must be paired</string>
+    <string name="Scan_pairing_help">User needs to scan the Barcode on the hand held device from Scan and Pair screen, which will start auto connecting or has to enter Serial number or B/T Mac address</string>
+    <string name="Camera_barcode_scan_help">Click the scan button and scan the serial number barcode of the sled</string>
+</resources>

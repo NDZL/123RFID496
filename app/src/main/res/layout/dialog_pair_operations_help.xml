@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/app_margin_left"
+    android:layout_marginRight="@dimen/app_margin_right"
+    android:layout_marginTop="@dimen/app_margin_right"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/roboto_regular_bold_20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin_right"
+                android:text="@string/PairOperationsHelp" />
+
+        <LinearLayout
+            android:id="@+id/dialogScanAndPairlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/roboto_regular_bold_15dp"
+                android:text="NFC Pairing"/>
+            <TableRow
+                android:id="@+id/nfcRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+
+
+                <TextView
+                    style="@style/roboto_regular_16dp_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">" />
+
+                <TextView
+                    style="@style/roboto_regular_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginRight="@dimen/app_margin_right"
+                    android:paddingStart="10dp"
+                    android:text="@string/NFC_pairing_help" />
+
+            </TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/roboto_regular_bold_15dp"
+                android:text="Scan Pairing"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    style="@style/roboto_regular_16dp_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">" />
+
+                <TextView
+                    style="@style/roboto_regular_14dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="@dimen/app_margin_right"
+                    android:paddingStart="10dp"
+                    android:text="@string/Scan_pairing_help" />
+
+            </TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/roboto_regular_bold_15dp"
+                android:text="Camera"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    style="@style/roboto_regular_16dp_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">" />
+
+                <TextView
+                    style="@style/roboto_regular_14dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="@dimen/app_margin_right"
+                    android:paddingStart="10dp"
+                    android:text="@string/Camera_barcode_scan_help" />
+
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CordlessPair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/roboto_regular_bold_15dp"
+                android:text="Pairing Cordless Reader"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/roboto_regular_16dp_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">" />
+
+                <TextView
+                    style="@style/roboto_regular_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/app_margin_right"
+                    android:paddingStart="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Provide the Bluetooth address of device and then scan barcode using sled. Then pair the reader" />
+
+            </TableRow>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_ok"
+                style="@style/roboto_regular_20dp_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/app_margin_right"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginTop="@dimen/app_margin_right"
+                android:clickable="true"
+                android:gravity="right"
+                android:text="@string/close" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

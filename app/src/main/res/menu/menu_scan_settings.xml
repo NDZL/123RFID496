@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".scanner.activities.ActiveScannerActivity">
+    <item android:id="@+id/action_scan"
+        android:icon="@drawable/nav_pair_new_bt_scanner"
+        android:title="@string/action_scan"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/base_layout_style"
+    android:orientation="vertical"
+    tools:context=".rfidreader.settings.UsbMiFiFragment">
+
+    <TextView
+        style="@style/style_medium_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/usb_mifi_settings_title" />
+
+    <include layout="@layout/title_divider" />
+    <TextView
+        style="@style/roboto_regular_14dp"
+        android:id="@+id/mifi_mesg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:paddingStart="10dp"
+        android:text="This configuration applicable only for RFD40/RFD90 device" />
+    <TableRow
+        android:id="@+id/mifi_support_row"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13">
+
+        <TextView
+            android:id="@+id/mifi_text"
+            style="@style/style_normal_font"
+            android:layout_width="wrap_content"
+            android:layout_weight="85"
+            android:gravity="start"
+            android:paddingTop="20dp"
+            android:text="@string/usb_mifi_subtitle"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_box_usb_mifi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15" />
+
+
+
+    </TableRow>
+
+</LinearLayout>
+
+
+

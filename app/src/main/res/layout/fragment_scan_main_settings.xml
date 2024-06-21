@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context="com.zebra.demo.rfidreader.manager.ScanHomeSettingsFragment">
+    <!-- <com.google.android.material.appbar.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+         <androidx.appcompat.widget.Toolbar
+             android:layout_width="wrap_content"
+             android:layout_height="?actionBarSize"
+             android:id="@+id/fragment_toolbar"/>
+     </com.google.android.material.appbar.AppBarLayout>
+ -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:onClick="loadScanSettings">
+
+                <TextView
+                    style="@style/roboto_medium_16dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="0"
+                    android:text="@string/scan_settings"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/right" />
+            </TableRow>
+
+            <include layout="@layout/normal_divider" />
+
+
+
+            <include layout="@layout/normal_divider" />
+
+            <!--Symbologies -->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:onClick="loadScanAdvancedSettings">
+
+                <TextView
+                    style="@style/roboto_medium_16dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="0"
+                    android:text="@string/scan_adv__settings"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/right" />
+            </TableRow>
+
+            <include layout="@layout/normal_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="45" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

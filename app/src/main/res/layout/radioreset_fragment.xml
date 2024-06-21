@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/radioresetheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="#283747"
+        android:text="@string/radio_heading" />
+
+    <TextView
+        android:id="@+id/radioresettextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioresetheading"
+        android:layout_below="@+id/radioresetheading"
+        android:layout_marginTop="12dp"
+        android:textColor="#283747"
+        android:textSize="16dp"
+        android:paddingRight="20dp"
+        android:text="@string/radio_reset" />
+
+    <Button
+        android:id="@+id/radioresetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="RESET"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#17A589"/>
+</RelativeLayout>

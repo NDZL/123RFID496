@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0" android:drawable="@drawable/ic_battery" />
+    <item android:minLevel="1" android:maxLevel="20" android:drawable="@drawable/battery_very_low"/>
+    <item android:minLevel="21" android:maxLevel="40" android:drawable="@drawable/battery_low" />
+    <item android:minLevel="41" android:maxLevel="60" android:drawable="@drawable/battery_half" />
+    <item android:minLevel="61" android:maxLevel="80" android:drawable="@drawable/battery_good"/>
+    <item android:minLevel="81" android:maxLevel="100" android:drawable="@drawable/battery_full" />
+
+</level-list>

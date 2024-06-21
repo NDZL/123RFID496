@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.zebra.demo.scanner.activities.ActiveScannerActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <ImageView
+                android:id="@+id/appbar_batteryLevelImage"
+                android:layout_width="40dp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_gravity="right"
+                android:paddingVertical="10dp"
+
+                android:contentDescription="@string/battery_level_desc"
+                android:src="@drawable/sled_battery_level" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_activescanner" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

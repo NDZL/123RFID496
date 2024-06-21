@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.zebra.demo.scanner.activities.NavigationHelpActivity"
+    android:background="@color/light_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_activity_help"
+    android:paddingBottom="@dimen/app_margin_left"
+    android:paddingLeft="@dimen/app_margin_left"
+    android:paddingRight="@dimen/app_margin_right"
+    android:paddingTop="@dimen/app_margin_left"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/roboto_regular_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/nav_help_instruction_1" />
+
+            <TextView
+                style="@style/roboto_regular_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/nav_help_instruction_2" />
+
+            <TextView
+                style="@style/roboto_regular_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:justificationMode="inter_word"
+                android:text="@string/nav_help_instruction_item1" />
+
+            <TextView
+                style="@style/roboto_regular_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/nav_help_instruction_item2" />
+
+            <TextView
+                style="@style/roboto_regular_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/nav_help_instruction_item3" />
+            <TextView
+                style="@style/roboto_regular_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/nav_help_instruction_item4" />
+            <TextView
+                style="@style/roboto_regular_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/nav_help_instruction_item5" />
+
+
+
+
+            <TextView
+                android:id="@+id/about"
+                style="@style/roboto_regular_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/nav_version_info" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

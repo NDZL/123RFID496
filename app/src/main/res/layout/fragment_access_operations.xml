@@ -1,0 +1,12 @@
+<androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/accessOperationsPager"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/access_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:layout_gravity="top" />
+</androidx.viewpager.widget.ViewPager>
+

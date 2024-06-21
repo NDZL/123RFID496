@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/readerprofilelist"
+        android:name="com.zebra.rfidreader.demo.settings.ProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".rfidreader.settings.ProfileFragment"
+        tools:listitem="@layout/fragment_profile"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilelistbutton"
+        android:onClick="saveProfileSelection"
+        android:backgroundTint="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/default_padding"
+        android:text="FINISH"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

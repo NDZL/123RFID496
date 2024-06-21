@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/default_padding">
+
+    <ImageView
+        android:id="@+id/connected_wifi_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginbottom"
+        android:src="@drawable/wifi_signal_level"/>
+
+    <TextView
+        android:id="@+id/connected_wifi_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/connected_wifi_icon"
+        android:layout_toRightOf="@id/connected_wifi_icon"
+        android:layout_toStartOf="@id/lock"
+        android:padding="@dimen/marginbottom"
+        android:text="Wifi Name "
+        android:textColor="@color/black_dark"
+        android:layout_toLeftOf="@id/lock" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="@dimen/marginbottom"
+        android:paddingRight="@dimen/default_padding"
+        android:scaleType="centerInside"
+        android:paddingBottom="@dimen/marginbottom"
+        />
+
+
+</RelativeLayout>

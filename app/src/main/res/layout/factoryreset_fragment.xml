@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/factoryresetheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="#283747"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:text="@string/factory_heading"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/factoryresettextview" />
+    <TextView
+        android:id="@+id/factoryresettextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/factoryresetheading"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#283747"
+        android:textSize="16dp"
+        android:paddingRight="20dp"
+        android:text="@string/factory_reset" />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/factoryresettextview"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_factory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FactoryReset"
+            android:focusedByDefault="true"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DeviceReset"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="RESET"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#17A589"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

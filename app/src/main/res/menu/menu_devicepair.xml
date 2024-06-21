@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".scanner.activities.MainActivity">
+
+    <!-- Search Widget -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/action_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+
+
+    <item
+        android:id="@+id/action_readerlist"
+        android:icon="@drawable/btn_filter1"
+        android:title="@string/home_filter"
+        app:showAsAction="always"
+        android:visible="false"/>
+    <item android:id="@+id/scan_and_pair_help"
+        android:title="@string/scan_and_pair_help"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/nav_connection_help_white"/>
+
+
+</menu>

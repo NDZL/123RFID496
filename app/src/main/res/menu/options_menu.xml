@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/connect"
+        android:icon="@drawable/ic_connect"
+        android:title="Connect" />
+    <item android:id="@+id/unpair"
+        android:title="Unpair"
+        android:icon="@drawable/ic_unpair"/>
+    <item android:id="@+id/reader_details"
+        android:title="Reader Details"
+        android:icon="@drawable/ic_reader_details"/>
+
+
+</menu>

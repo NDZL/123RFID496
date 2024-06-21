@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".scanner.activities.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/btn_sett1"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_locate"
+        android:icon="@drawable/btn_locate2"
+        android:title="@string/action_locate"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_locate_menu"
+        android:icon="@drawable/btn_locate2"
+        android:title="@string/action_locate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_rapidread"
+        android:icon="@drawable/btn_rr1"
+        android:title="@string/rapid_read"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_prefilter"
+        android:icon="@drawable/btn_filter1"
+        android:title="@string/home_filter"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_tagwrite"
+        android:icon="@drawable/btn_access1"
+        android:title="@string/tag_write"
+        app:showAsAction="never" />
+</menu>

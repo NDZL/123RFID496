@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/connected_wifi_network"
+    android:layout_margin="16dp"
+    android:background="@drawable/connected_reader_background"
+    android:backgroundTint="@color/dense_blue">
+
+    <ImageView
+        android:id="@+id/connected_wif_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_wifi_full"
+        />
+
+    <TextView
+        android:id="@+id/connected_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/connected_wif_icon"
+        android:text="WIFI NAME"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/connected_wif_icon"/>
+
+    <TextView
+        android:id="@+id/wifi_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/connected_wif_icon"
+        android:layout_below="@id/connected_wifi_name"
+        android:layout_marginTop="4dp"
+        android:text="Connected"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/connected_wif_icon" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:id="@+id/connected_wifi_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_wifi_lock"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/connected_wifi_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/wifi_menu"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+

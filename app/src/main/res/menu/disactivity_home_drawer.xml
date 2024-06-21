@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/menu_readers"
+            android:icon="@drawable/ic_rfid_reader"
+            android:iconTint="@color/black_dark"
+            android:title="Readers"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_battery_statics"
+            android:icon="@drawable/ic_battery_statistics"
+            android:title="Battery Statistics"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_pair_device"
+            android:icon="@drawable/nav_pair_new_bt_scanner"
+            android:title="Pair Bluetooth Scanner"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_devices"
+            android:icon="@drawable/nav_available_scanners"
+            android:title="Available Device List"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_find_cabled_scanner"
+            android:icon="@drawable/nav_find_cabled_scanners"
+            android:title="Find Cabled Scanner"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_manage_device"
+            android:icon="@drawable/nav_pair_new_bt_scanner"
+            android:title="Manage RFDXXX"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_fw_update"
+            android:icon="@drawable/ic_firmware_update"
+            android:title="Firmware Update" />
+        <item
+            android:id="@+id/nav_connection_help"
+            android:icon="@drawable/nav_connection_help"
+            android:title="Help"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/nav_app_settings"
+            android:title="Settings"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about"
+            android:title="App Overview"
+            android:visible="false"/>
+
+</menu>

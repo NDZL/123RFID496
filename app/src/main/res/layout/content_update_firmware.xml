@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zebra.demo.scanner.activities.UpdateFirmware"
+    tools:showIn="@layout/app_bar_update_firmware">
+
+
+    <LinearLayout
+        android:id="@+id/layout_update_firmware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_file_path"
+                style="@style/roboto_regular_14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_margin_left"
+            android:background="@color/white"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_weight="85"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txt_from_fw_version"
+                    style="@style/roboto_regular_14dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_to_fw_version"
+                    style="@style/roboto_regular_14dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tbl_row_fw_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/light_grey"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:src="@drawable/error_red" />
+
+            <TextView
+                android:id="@+id/txt_firmware_status"
+                style="@style/roboto_medium_22dp_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/update_failed"
+                android:textAlignment="gravity" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tbl_row_select_firmware"
+            style="@style/white_background_row"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/btn_select_firmware"
+                style="@style/style_blue_gray_button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="selectFirmware"
+                android:text="@string/selectFirmware"
+                android:textAlignment="center"
+                android:textSize="22sp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tbl_row_fw_update"
+            style="@style/white_background_row"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/btn_update_firmware"
+                style="@style/style_blue_gray_button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="5dp"
+                android:onClick="updateFirmware"
+                android:textAlignment="center"
+                android:text="@string/updateFirmware"
+                android:textSize="22sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbl_row_fw_update_success"
+            style="@style/white_background_row"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_firmware_success"
+                style="@style/roboto_medium_22dp_white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/green"
+                android:text="@string/firmware_updated"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

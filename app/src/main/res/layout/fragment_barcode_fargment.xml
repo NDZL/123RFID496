@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    tools:context=".scanner.fragments.BarcodeFargment">
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray">
+
+        <TextView
+            style="@style/roboto_regular_16dp"
+            android:id="@+id/barcodesListCount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Barcodes Scanned: 0"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="18dp" />
+    </TableRow>
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:gravity="center_horizontal">
+    <ListView
+        android:id="@+id/barcodesList"
+        android:scrollbars = "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="85"
+        android:paddingRight="8dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollIndicators="right"
+        android:fadeScrollbars="false"
+        android:fastScrollEnabled="false"
+        android:fastScrollAlwaysVisible="false"
+        android:transcriptMode="alwaysScroll"
+        style ="@style/style_scrollbar"
+        tools:targetApi="m" />
+    </LinearLayout>
+
+    <TableRow
+        style="@style/light_gray_background_row"
+        android:layout_height="91dp"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            style="@style/style_blue_gray_button"
+            android:text="@string/clearList"
+            android:textSize="12sp"
+            android:id="@+id/btnClearList"
+            android:onClick="clearList"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+        />
+
+        <Button
+            style="@style/style_blue_gray_button"
+            android:text="@string/scanTrigger"
+            android:textSize="12sp"
+            android:id="@+id/btnScanTrigger"
+            android:onClick="scanTrigger"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:id="@+id/btn_batch_request"
+            style="@style/style_blue_gray_button"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:onClick="initBatchRequest"
+            android:text="@string/batch_request"
+            android:textSize="12sp" />
+
+    </TableRow>
+ </LinearLayout>

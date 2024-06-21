@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rfidreader.settings.RegulatorySettingsFragment">
+
+    <TextView
+        android:id="@+id/regulatorySettingsCurrentRegion"
+        style="@style/style_normal_font"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center_vertical"
+        android:text="@string/region_title"
+        android:paddingLeft="@dimen/default_padding"
+        android:background="@color/transparent_grey"/>
+
+    <include layout="@layout/divider" />
+
+    <Spinner
+        android:id="@+id/currentRegionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:layout_weight="8"
+        />
+    <include layout="@layout/divider" />
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" /> -->
+
+    <TextView
+        android:id="@+id/regulatorySettingsChannelSelectionTitle"
+        style="@style/style_normal_font"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center_vertical"
+        android:text="@string/channel_selection"
+        android:paddingLeft="@dimen/default_padding"
+        android:background="@color/transparent_grey"/>
+
+    <include layout="@layout/divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45">
+
+        <LinearLayout
+            android:id="@+id/regChannelCheckBoxes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_warning"
+        android:layout_height="0dp"
+        android:layout_weight="18">
+
+       <!-- <TextView
+            style="@style/style_red_font"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/selectCountryWarningText"
+            android:gravity="center"
+            android:text="@string/warning_title" />
+            -->
+
+        <TextView
+            android:id="@+id/selectCountryWarningText"
+            style="@style/style_red_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin"
+            android:paddingTop="@dimen/margin"
+            android:text="@string/country_selection_warning" />
+        <Button
+            android:id="@+id/regulatoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:onClick="showProfileSettings"
+            android:layout_alignParentBottom="true"
+            app:backgroundTint="@color/blue"
+            app:iconTint="@color/white"
+            android:text="@string/next"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>
+

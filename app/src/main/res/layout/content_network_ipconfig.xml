@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/light_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zebra.demo.scanner.fragments.Static_ipconfig"
+    tools:showIn="@layout/app_bar_network_ipconfig">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layoutIpsettings">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        style="@style/roboto_medium_16dp"
+                        android:id="@+id/titleSelect"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_height="match_parent"
+                        android:text="@string/ipSettings" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                    <Spinner
+                        android:id="@+id/ipsetting"
+                        style="@style/style_default_spinner"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="fill"/>
+
+                </TableRow>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDHCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/light_gray"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+
+                <include layout="@layout/normal_divider" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        style="@style/roboto_medium_16dp"
+                        android:id="@+id/titleIpAddress"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_height="match_parent"
+                        android:text="@string/ip_address" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <TextView
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/ipAddress"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        android:id="@+id/titleNetmask"
+                        style="@style/roboto_medium_16dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:text="@string/netmask" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <TextView
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/netmask"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        style="@style/roboto_medium_16dp"
+                        android:id="@+id/titleGateway"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_height="match_parent"
+                        android:text="@string/gateway" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <TextView
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/gateway"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        style="@style/roboto_medium_16dp"
+                        android:id="@+id/titleDNS"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_height="match_parent"
+                        android:text="@string/DNS" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <TextView
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/DNS"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_nonpremium"
+                android:background="@android:color/white"
+                android:visibility="gone">
+                <TextView
+                    style="@style/roboto_regular_20dp"
+
+                    android:layout_marginLeft="@dimen/app_margin_left"
+                    android:layout_height="match_parent"
+                    android:text="@string/nonPremium" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutStatic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/light_gray"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <include layout="@layout/normal_divider" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        style="@style/roboto_medium_16dp"
+                        android:id="@+id/StaticIpAddress"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_height="match_parent"
+                        android:text="@string/ip_address" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:hint="Enter IP address"
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/editipAddress"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        android:id="@+id/StaticNetmask"
+                        style="@style/roboto_medium_16dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:text="@string/netmask" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:hint="Enter Netmask"
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/editnetmask"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        style="@style/roboto_medium_16dp"
+                        android:id="@+id/StaticGateway"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_height="match_parent"
+                        android:text="@string/gateway" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:hint="Enter Gateway"
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/editgateway"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white" >
+
+                    <TextView
+                        style="@style/roboto_medium_16dp"
+                        android:id="@+id/StaticDNS"
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_height="match_parent"
+                        android:text="@string/DNS" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <EditText
+                        android:layout_weight="2"
+                        android:hint="Enter DNS"
+                        style="@style/roboto_regular_16dp"
+                        android:id="@+id/editDNS"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/app_margin_right"
+                        android:text=""/>
+
+                </TableRow>
+
+                <include layout="@layout/normal_divider" />
+
+                <Button
+                    android:id="@+id/applyIpconfig"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:text="Apply" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

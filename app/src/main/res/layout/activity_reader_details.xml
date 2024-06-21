@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin"
+    tools:context=".scanner.fragments.ReaderDetailsFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:paddingTop="24dp"
+        android:id="@+id/readerName"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@id/readerName">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/readername_value"
+            android:textColor="@color/black_dark"
+            android:paddingTop="@dimen/reader_list_item_padding"
+            android:paddingRight="48dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon_rename_reader"
+            app:srcCompat="@drawable/ic_rename_reader"
+            android:layout_alignParentRight="true"
+            android:paddingRight="18dp"
+            android:backgroundTint="@color/white"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/serial_no"
+        android:layout_below="@+id/name"
+        android:text="SERIAL NO."
+        android:paddingTop="14dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/serialno_value"
+        android:text="0000"
+        android:layout_below="@id/serial_no"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:paddingTop="@dimen/reader_list_item_padding"
+        android:textColor="@color/black_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/model"
+        android:layout_below="@id/serialno_value"
+        android:paddingTop="14dp"
+        android:text="MODEL"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/model_value"
+        android:paddingTop="@dimen/reader_list_item_padding"
+        android:text="00000"
+        android:layout_below="@id/model"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifidetails"
+        android:layout_below="@id/model_value"
+        android:paddingTop="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi"
+            android:text="WIFI"/>
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/macaddr"
+            android:text="MAC ADDRESS"
+            android:paddingLeft="170dp"/> -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi_available"
+            android:layout_below="@id/wifi"
+            android:paddingTop="@dimen/reader_list_item_padding"
+            android:textColor="@color/black_dark"
+            android:text="Not Available"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mac_address"
+            android:layout_below="@id/macaddr"
+            android:paddingTop="@dimen/reader_list_item_padding"
+            android:paddingLeft="170dp"
+            android:textColor="@color/black_dark"
+            android:text="00000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+             -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rfid_label"
+            android:text="RFID"
+            android:layout_below="@id/wifi_available"
+            android:paddingTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rfid_availabe"
+            android:layout_below="@id/rfid_label"
+            android:text="Available"
+            android:textColor="@color/black_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:paddingTop="@dimen/reader_list_item_padding"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan_label"
+            android:layout_below="@id/rfid_availabe"
+            android:paddingTop="24dp"
+            android:text="SCAN"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan_available"
+            android:layout_below="@id/scan_label"
+            android:paddingTop="@dimen/reader_list_item_padding"
+            android:text="Available"
+            android:textColor="@color/black_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipaddr"
+        android:paddingTop="24dp"
+        android:layout_below="@id/wifidetails"
+        android:text="IP ADDRESS"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ip_address"
+        android:layout_below="@id/ipaddr"
+        android:paddingTop="@dimen/reader_list_item_padding"
+        android:text="00000"
+        android:textColor="@color/black_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ip_address_1"
+        android:layout_below="@id/ip_address"
+        android:paddingTop="@dimen/reader_list_item_padding"
+        android:text="00000"
+        android:textColor="@color/black_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+-->
+</RelativeLayout>
+
+
+

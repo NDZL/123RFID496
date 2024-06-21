@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reset_factory"
+            android:icon="@drawable/nav_pair_new_bt_scanner"
+            android:title="Reset Factory Default"/>
+
+        <item
+            android:id="@+id/nav_reset_reader"
+            android:icon="@drawable/nav_available_scanners"
+            android:title="Reset Reader" />
+        <item
+            android:id="@+id/nav_enable_logging"
+            android:icon="@drawable/nav_find_cabled_scanners"
+            android:title="Enable Logging"/>
+    </group>
+
+</menu>

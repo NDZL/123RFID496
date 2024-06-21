@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_padding"
+    android:layout_marginTop="@dimen/default_padding"
+    android:background="@drawable/paired_reader_listbackground">
+
+    <ImageView
+        android:id="@+id/pairedreader_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_rfid_sled_round"
+        />
+
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readerdetails"
+        android:layout_toEndOf="@id/pairedreader_icon"
+
+        android:paddingTop="8dp"
+        >-->
+
+    <TextView
+        android:id="@+id/pairedreader_serialno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pairedreader_icon"
+        android:layout_toStartOf="@id/options_menu"
+        android:text="READER NAME"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pairedreader_icon"
+        android:layout_toStartOf="@id/options_menu"
+        android:layout_below="@id/pairedreader_serialno"
+        android:layout_marginTop="4dp"
+        android:text="@string/readermodel"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/serialno"
+        android:layout_below="@id/model"
+        android:layout_toEndOf="@id/pairedreader_icon"
+        android:layout_toStartOf="@id/options_menu"
+        android:text="@string/serialno"
+        android:layout_marginTop="4dp"
+        android:textSize="14dp"/>
+
+
+    <!-- </RelativeLayout> -->
+
+
+    <ImageView
+        android:id="@+id/options_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:scaleType="centerInside"
+        android:paddingBottom="8dp"
+        app:srcCompat="@drawable/ic_menu_options"/>
+
+
+</RelativeLayout>
+
+

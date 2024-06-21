@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/disconnect"
+        android:title="@string/Disconnect"
+        android:icon="@drawable/ic_disconnect"/>
+    <item android:id="@+id/reader_wifisettings"
+        android:title="Reader Wifi Settings"
+        android:visible="false"
+        android:icon="@drawable/ic_reader_wifi_settings"/>
+    <item android:id="@+id/fw_update"
+        android:title="Firmware Update"
+        android:icon="@drawable/ic_firmware_update"/>
+    <item android:id="@+id/connected_reader_details"
+        android:title="Reader Details"
+        android:icon="@drawable/ic_reader_details"/>
+    <item android:id="@+id/rename_reader"
+        android:title="Rename Reader"
+        android:visible="true"
+        android:icon="@drawable/ic_rename_reader"/>
+
+</menu>

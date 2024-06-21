@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin"
+    android:layout_marginLeft="@dimen/margin"
+    tools:context=".wifi.ReaderWifiSettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connected_wifi"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectedlabel"
+            android:text="Connected Network"
+            android:textStyle="bold"/>
+        <include layout="@layout/connected_wifi_network"
+            android:layout_below="@+id/connectedlabel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <!--  <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/rw_connected_wifi"
+              android:layout_below="@id/connectedlabel"
+              android:layout_marginTop="8dp"
+              app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+  -->
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedlabel"
+        android:text="Saved Networks"
+        android:textStyle="bold"
+        android:layout_below="@id/connected_wifi"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savedlabel"
+        android:id="@+id/ll_saved_wifi_networks"
+        android:layout_marginTop="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_saved_wifi_networks"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/othernetworks"
+        android:layout_below="@id/ll_saved_wifi_networks"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/othernetworkslabel"
+            android:text="Other Available Networks"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_scannetworks"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/default_padding"
+            app:srcCompat="@drawable/ic_autoresync"
+            android:backgroundTint="@color/white"/>
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_other_available_networks"
+        android:layout_below="@id/othernetworks"
+        android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+</RelativeLayout>
